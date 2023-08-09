@@ -2,13 +2,12 @@ import { useState } from 'react';
 import { AddTask } from '../components/AddTask';
 import { Header } from '../components/Header';
 import { ShowTask } from '../components/ShowTask';
-
-import { data } from '../models/data';
+import { Task } from '../common/Task';
 
 import './App.css';
 
 function App() {
-  const [tasklist, setTasklist] = useState([...data]);
+  const [tasklist, setTasklist] = useState<Task[]>([]);
 
   return (
     <div className='App'>

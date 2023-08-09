@@ -1,20 +1,6 @@
-import React, { SetStateAction } from 'react';
+import { Task, TaskProps } from '../common/Task';
 
-type Task = {
-  id: number;
-  name: string;
-  time: string;
-};
-
-interface ShowTaskProps {
-  tasklist: Task[];
-  setTasklist: React.Dispatch<SetStateAction<Task[]>>;
-}
-
-export const ShowTask: React.FC<ShowTaskProps> = ({
-  tasklist,
-  setTasklist,
-}: ShowTaskProps) => {
+export const ShowTask: React.FC<TaskProps> = ({ tasklist, setTasklist }) => {
   return (
     <section className='showTask'>
       <p className='head'>

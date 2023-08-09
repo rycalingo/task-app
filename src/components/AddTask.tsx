@@ -1,4 +1,6 @@
-export const AddTask = () => {
+import { TaskProps } from '../common/Task';
+
+export const AddTask: React.FC<TaskProps> = ({ tasklist, setTasklist }) => {
   return (
     <section className='addTask'>
       <form>
