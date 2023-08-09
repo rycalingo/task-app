@@ -26,6 +26,7 @@ export const AddTask = ({
         <input
           type='text'
           name='task'
+          value={task.name}
           autoComplete='off'
           placeholder='add task'
           maxLength={25}
