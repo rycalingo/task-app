@@ -1,11 +1,11 @@
 import { Task, TaskProps } from '../common/Task';
 
-export const ShowTask: React.FC<TaskProps> = ({
+export const ShowTask = ({
   tasklist,
   setTasklist,
   task,
   setTask,
-}) => {
+}: TaskProps) => {
   const handleEdit = (id: number) => {
     const selectedTask = tasklist.find((todo) => todo.id === id);
     console.log(selectedTask);

@@ -1,12 +1,11 @@
-import { useEffect } from 'react';
 import { Task, TaskProps } from '../common/Task';
 
-export const AddTask: React.FC<TaskProps> = ({
+export const AddTask = ({
   tasklist,
   setTasklist,
   task,
   setTask,
-}) => {
+}: TaskProps) => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
 

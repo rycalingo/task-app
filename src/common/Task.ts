@@ -8,7 +8,7 @@ export type Task = {
 
 export interface TaskProps {
   tasklist: Task[] | [],
-  setTasklist: Dispatch<SetStateAction<Task[] | []>>,
+  setTasklist: Dispatch<SetStateAction<Task[]|[]>>,
   task: Task | {},
-  setTask: Dispatch<SetStateAction<Task>>,
+  setTask: Dispatch<SetStateAction<Task|{}>>,
 }

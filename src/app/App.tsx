@@ -7,8 +7,8 @@ import { Task } from '../common/Task';
 import './App.css';
 
 function App() {
-  const [tasklist, setTasklist] = useState<Task[]>([]);
-  const [task, setTask] = useState({});
+  const [tasklist, setTasklist] = useState<Task[] | []>([]);
+  const [task, setTask] = useState<Task | {}>({});
 
   return (
     <div className='App'>
