@@ -10,7 +10,9 @@ export const ShowTask: React.FC<TaskProps> = ({ tasklist, setTasklist }) => {
             {tasklist?.length ? tasklist.length : 0}
           </span>
         </span>
-        <span className='clearAll'>Clear All</span>
+        <span className='clearAll' onClick={() => setTasklist([])}>
+          Clear All
+        </span>
       </p>
       <ul>
         {tasklist?.map((task: Task) => (

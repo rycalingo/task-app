@@ -1,9 +1,23 @@
-import { TaskProps } from '../common/Task';
+import { Task, TaskProps } from '../common/Task';
 
 export const AddTask: React.FC<TaskProps> = ({ tasklist, setTasklist }) => {
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+
+    const date = new Date();
+    const newTask: Task = {
+      id: date.getTime(),
+      name: e.target.task.value,
+      time: `${date.toLocaleTimeString()} ${date.toLocaleDateString()}`,
+    };
+
+    setTasklist([...tasklist, newTask]);
+    e.target.task.value = '';
+  };
+
   return (
     <section className='addTask'>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           type='text'
           name='task'

@@ -13,7 +13,7 @@ function App() {
     <div className='App'>
       <div className='container'>
         <Header />
-        <AddTask />
+        <AddTask tasklist={tasklist} setTasklist={setTasklist} />
         <ShowTask tasklist={tasklist} setTasklist={setTasklist} />
       </div>
     </div>
