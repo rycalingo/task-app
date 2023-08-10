@@ -1,4 +1,4 @@
-import { Task, TaskProps } from '../common/Task';
+import { Task, TaskProps } from '../scripts/Task';
 
 export const AddTask = ({
   tasklist,

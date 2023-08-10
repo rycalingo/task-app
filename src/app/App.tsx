@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { AddTask } from '../components/AddTask';
 import { Header } from '../components/Header';
 import { ShowTask } from '../components/ShowTask';
-import { Task } from '../common/Task';
+import { Task } from '../scripts/Task';
 
 import './App.css';
 
