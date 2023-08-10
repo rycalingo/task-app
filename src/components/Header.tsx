@@ -6,7 +6,9 @@ interface HeaderProps {
 }
 
 export const Header = ({ themeList }: HeaderProps) => {
-  const [theme, setTheme] = useState<string>('dark');
+  const [theme, setTheme] = useState<string>(
+    localStorage.getItem('theme') || 'dark'
+  );
 
   const updateTheme = useCallback(
     (selectedTheme: string) => {
