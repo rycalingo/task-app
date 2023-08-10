@@ -7,9 +7,11 @@ export const ShowTask = ({
   setTask,
 }: TaskProps) => {
   const handleEdit = (id: number | null) => {
-    const selectedTask = tasklist.find((todo) => todo.id === id);
-    console.log(selectedTask);
-    if (selectedTask) setTask(selectedTask);
+    if (task.id === undefined) {
+      const selectedTask = tasklist.find((todo) => todo.id === id);
+      console.log(selectedTask);
+      if (selectedTask) setTask(selectedTask);
+    }
   };
 
   const handleDelete = (id: number | null) => {
