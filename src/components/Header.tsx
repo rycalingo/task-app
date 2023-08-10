@@ -10,6 +10,10 @@ export const Header = ({ themeList }: HeaderProps) => {
     localStorage.getItem('theme') || 'dark'
   );
 
+  const themeNames: string[] = useMemo(() => {
+    return themeList.length ? themeList : ['light', 'dark'];
+  }, [themeList]);
+
   const updateTheme = useCallback(
     (selectedTheme: string) => {
       document.documentElement.classList.remove(theme);
@@ -21,13 +25,13 @@ export const Header = ({ themeList }: HeaderProps) => {
   );
 
   const themeButtons = useMemo(() => {
-    return themeList?.map((themeName, i) => {
-      const isActive = theme === themeName ? 'activeTheme' : '';
+    return themeNames.map((name, i) => {
+      const isActive = theme === name ? 'activeTheme' : '';
       return (
         <span
-          onClick={(e) => updateTheme(themeName)}
+          onClick={(e) => updateTheme(name)}
           key={i}
-          className={`${themeName} ${isActive}`}
+          className={`${name} ${isActive}`}
         ></span>
       );
     });
