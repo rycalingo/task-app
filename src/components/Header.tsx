@@ -40,8 +40,8 @@ export const Header = ({ themeList }: HeaderProps) => {
   return (
     <header>
       <div className='logo'>
-        <img src={Logo} alt='Taskmate Logo' />
-        <span>Taskmate</span>
+        <img src={Logo} alt='TaskBuddy Logo' />
+        <span>TaskBuddy</span>
       </div>
       <div className='themeSelector'>{themeButtons}</div>
     </header>
