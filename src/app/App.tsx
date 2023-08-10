@@ -6,6 +6,8 @@ import { Task } from '../common/Task';
 
 import './App.css';
 
+import { themeList } from '../models/theme';
+
 function App() {
   const [tasklist, setTasklist] = useState<Task[] | []>([]);
   const [task, setTask] = useState<Task | {}>({});
@@ -13,7 +15,7 @@ function App() {
   return (
     <div className='App'>
       <div className='container'>
-        <Header />
+        <Header themeList={themeList} />
         <AddTask
           tasklist={tasklist}
           setTasklist={setTasklist}

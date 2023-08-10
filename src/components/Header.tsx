@@ -1,20 +1,47 @@
+import { useState, useCallback, useMemo, useEffect } from 'react';
 import Logo from '../static/logo.svg';
 
-export const Header = () => {
+interface HeaderProps {
+  themeList: string[];
+}
+
+export const Header = ({ themeList }: HeaderProps) => {
+  const [theme, setTheme] = useState<string>('dark');
+
+  const updateTheme = useCallback(
+    (selectedTheme: string) => {
+      document.documentElement.classList.remove(theme);
+      document.documentElement.classList.add(selectedTheme);
+      localStorage.setItem('theme', selectedTheme);
+      setTheme(selectedTheme);
+    },
+    [theme]
+  );
+
+  const themeButtons = useMemo(() => {
+    return themeList?.map((themeName, i) => {
+      const isActive = theme === themeName ? 'activeTheme' : '';
+      return (
+        <span
+          onClick={(e) => updateTheme(themeName)}
+          key={i}
+          className={`${themeName} ${isActive}`}
+        ></span>
+      );
+    });
+  }, [theme]);
+
+  useEffect(() => {
+    updateTheme(theme);
+  }, [theme]);
+
   return (
     <header>
       <div className='logo'>
         <img src={Logo} alt='Taskmate Logo' />
         <span>Taskmate</span>
       </div>
-      <div className='themeSelector'>
-        <span className='light activeTheme'></span>
-        <span className='medium'></span>
-        <span className='dark'></span>
-        <span className='gradientOne'></span>
-        <span className='gradientTwo'></span>
-        <span className='gradientThree'></span>
-      </div>
+      <div className='themeSelector'>{themeButtons}</div>
     </header>
   );
 };
