@@ -1,11 +1,12 @@
-import { Task, TaskProps } from '../scripts/Task';
+import { Task, ShowTaskProps } from '../scripts/Task';
 
 export const ShowTask = ({
   tasklist,
   setTasklist,
   task,
   setTask,
-}: TaskProps) => {
+  toggleEditMode,
+}: ShowTaskProps) => {
   const handleEdit = (id: number | null) => {
     if (task.id === undefined) {
       const selectedTask = tasklist.find((todo) => todo.id === id);
@@ -47,9 +48,7 @@ export const ShowTask = ({
                   </span>
                 </p>
                 <i
-                  onClick={() =>
-                    handleEdit(task.id !== undefined ? task.id : null)
-                  }
+                  onClick={() => toggleEditMode()}
                   className='bi bi-pencil-square'
                 ></i>
                 <i

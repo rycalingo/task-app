@@ -13,7 +13,11 @@ export interface TaskProps {
   setTask: Dispatch<SetStateAction<Task|{}>>,
 }
 
+export interface ShowTaskProps extends TaskProps {
+  toggleEditMode: Function,
+}
+
 export interface EditTaskProps {
   isOpen: boolean,
-  toggleEditMode: Dispatch<SetStateAction<boolean>>,
+  toggleEditMode: Function,
 }
