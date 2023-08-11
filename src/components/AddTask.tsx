@@ -1,11 +1,11 @@
-import { Task, TaskProps } from '../scripts/Task';
+import { Task, AddTaskProps } from '../scripts/Task';
 
 export const AddTask = ({
   tasklist,
   setTasklist,
   task,
   setTask,
-}: TaskProps) => {
+}: AddTaskProps) => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
 

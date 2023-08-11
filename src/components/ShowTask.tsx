@@ -7,13 +7,13 @@ export const ShowTask = ({
   setTask,
   toggleEditMode,
 }: ShowTaskProps) => {
-  const handleEdit = (id: number | null) => {
-    if (task.id === undefined) {
-      const selectedTask = tasklist.find((todo) => todo.id === id);
-      console.log(selectedTask);
-      if (selectedTask) setTask(selectedTask);
-    }
-  };
+  // const handleEdit = (id: number | null) => {
+  //   if (task.id === undefined) {
+  //     const selectedTask = tasklist.find((todo) => todo.id === id);
+  //     console.log(selectedTask);
+  //     if (selectedTask) setTask(selectedTask);
+  //   }
+  // };
 
   const handleDelete = (id: number | null) => {
     if (id !== null) {

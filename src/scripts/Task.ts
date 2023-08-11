@@ -7,17 +7,20 @@ export type Task = {
 };
 
 export interface TaskProps {
-  tasklist: Task[] | [],
-  setTasklist: Dispatch<SetStateAction<Task[]|[]>>,
   task: Task,
   setTask: Dispatch<SetStateAction<Task|{}>>,
 }
 
-export interface ShowTaskProps extends TaskProps {
+export interface AddTaskProps extends TaskProps {
+  tasklist: Task[] | [],
+  setTasklist: Dispatch<SetStateAction<Task[]|[]>>,
+}
+
+export interface ShowTaskProps extends AddTaskProps {
   toggleEditMode: Function,
 }
 
-export interface EditTaskProps {
+export interface EditTaskProps extends TaskProps {
   isOpen: boolean,
   toggleEditMode: Function,
 }

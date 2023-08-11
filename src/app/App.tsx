@@ -34,7 +34,12 @@ function App() {
           setTask={setTask}
           toggleEditMode={toggleEditMode}
         />
-        <EditTask isOpen={inEditMode} toggleEditMode={toggleEditMode} />
+        <EditTask
+          task={task}
+          setTask={setTask}
+          isOpen={inEditMode}
+          toggleEditMode={toggleEditMode}
+        />
       </div>
     </div>
   );
