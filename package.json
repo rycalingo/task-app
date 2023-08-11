@@ -2,7 +2,7 @@
   "name": "taskbuddy_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rycalingo.github.io/taskbuddy/",
+  "homepage": "https://rycalingo.github.io/task-app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
