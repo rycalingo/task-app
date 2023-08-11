@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/task-app/static/css/main.cd36be22.css",
-    "main.js": "/task-app/static/js/main.4fa3732f.js",
+    "main.css": "/task-app/static/css/main.8cd0ea91.css",
+    "main.js": "/task-app/static/js/main.6a6e2290.js",
     "static/media/bootstrap-icons.woff?": "/task-app/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
     "static/media/bootstrap-icons.woff2?": "/task-app/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
     "static/media/logo.svg": "/task-app/static/media/logo.10405fc30d75c1617d30c2b31a9da7e3.svg",
     "index.html": "/task-app/index.html",
-    "main.cd36be22.css.map": "/task-app/static/css/main.cd36be22.css.map",
-    "main.4fa3732f.js.map": "/task-app/static/js/main.4fa3732f.js.map"
+    "main.8cd0ea91.css.map": "/task-app/static/css/main.8cd0ea91.css.map",
+    "main.6a6e2290.js.map": "/task-app/static/js/main.6a6e2290.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd36be22.css",
-    "static/js/main.4fa3732f.js"
+    "static/css/main.8cd0ea91.css",
+    "static/js/main.6a6e2290.js"
   ]
 }
