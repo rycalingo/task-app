@@ -16,7 +16,7 @@ export const Modal = ({ children, title, isOpen }: ModalProps) => {
         createPortal(
           <div className='modalOverlay'>
             <div className='modalContainer'>
-              <h1 className='modalTitle'>{title}</h1>
+              <h2 className='modalTitle'>{title}</h2>
               <div className='modalContent'>{children}</div>
             </div>
           </div>,

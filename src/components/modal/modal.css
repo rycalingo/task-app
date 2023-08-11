@@ -9,19 +9,24 @@
 }
 
 .modalContainer {
-  border: 1px solid black;
+  border-radius: 5px;
   background: white;
   width: 50%;
   margin: 0 auto;
   padding: 25px;
 }
 
+.modalContainer .bi-x-circle {
+  color: #656565;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
 .modalTitle {
   text-align: center;
-  background-color: black;
-  color: white;
-
-
+  color: black;
+  background-color: white;
 }
 
 .modalContent {
