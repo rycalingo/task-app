@@ -9,6 +9,7 @@
 }
 
 .modalContainer {
+  position: relative;
   border-radius: 5px;
   background: white;
   width: 50%;
@@ -16,10 +17,17 @@
   padding: 25px;
 }
 
+.modalContainer .close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 18px;
+}
+
 .modalContainer .bi-x-circle {
   color: #656565;
-  width: 2rem;
-  height: 2rem;
+  width: 1.75rem;
+  height: 1.75rem;
   cursor: pointer;
 }
 
@@ -32,4 +40,43 @@
 .modalContent {
   background: white;
   text-align: center;
+}
+
+.editTask form {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.editTask input {
+  flex-grow: 1;
+  padding: 5px 5px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.editTask .update {
+  background-color: #8603ba;
+  color: #FFFFFF;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.editTask .cancel {
+  background-color: #ababab;
+  color: #FFFFFF;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.editTask .flex-h {
+  gap: 7px;
 }

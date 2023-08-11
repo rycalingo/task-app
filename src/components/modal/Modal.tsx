@@ -16,6 +16,9 @@ export const Modal = ({ children, title, isOpen }: ModalProps) => {
         createPortal(
           <div className='modalOverlay'>
             <div className='modalContainer'>
+              <span className='close-button' onClick={() => toggleClose()}>
+                <i className='bi bi-x-circle'></i>
+              </span>
               <h2 className='modalTitle'>{title}</h2>
               <div className='modalContent'>{children}</div>
             </div>
