@@ -7,9 +7,10 @@ interface ModalProps {
   children: ReactNode;
   title: string;
   isOpen: boolean;
+  toggleClose(): void;
 }
 
-export const Modal = ({ children, title, isOpen }: ModalProps) => {
+export const Modal = ({ children, title, isOpen, toggleClose }: ModalProps) => {
   return (
     <>
       {isOpen &&

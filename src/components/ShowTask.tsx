@@ -7,15 +7,15 @@ export const ShowTask = ({
   setTask,
   toggleEditMode,
 }: ShowTaskProps) => {
-  // const handleEdit = (id: number | null) => {
-  //   if (task.id === undefined) {
-  //     const selectedTask = tasklist.find((todo) => todo.id === id);
-  //     console.log(selectedTask);
-  //     if (selectedTask) setTask(selectedTask);
-  //   }
-  // };
+  const handleEdit = (id: number) => {
+    if (tasklist.length !== 0 && id !== 0) {
+      const selectedTask = tasklist.find((todo) => todo.id === id);
+      if (selectedTask) setTask(selectedTask);
+      toggleEditMode();
+    }
+  };
 
-  const handleDelete = (id: number | null) => {
+  const handleDelete = (id: number) => {
     if (id !== null) {
       const updatedTaskList = tasklist.filter((todo) => todo.id !== id);
       setTasklist(updatedTaskList);
@@ -40,7 +40,7 @@ export const ShowTask = ({
           ? tasklist?.map((task: Task, i) => (
               <li key={task.id !== undefined ? task.id : i}>
                 <span className='flex-v'>
-                  <span onClick={() => toggleEditMode()}>
+                  <span onClick={() => handleEdit(task.id || 0)}>
                     <i className='bi bi-pencil-square'></i>
                   </span>
                   <span>&nbsp;</span>
@@ -55,11 +55,7 @@ export const ShowTask = ({
                 </p>
                 <span className='flex-v'>
                   <span>&nbsp;</span>
-                  <span
-                    onClick={() =>
-                      handleDelete(task.id !== undefined ? task.id : null)
-                    }
-                  >
+                  <span onClick={() => handleDelete(task.id || 0)}>
                     <i className='bi bi-trash'></i>
                   </span>
                 </span>
