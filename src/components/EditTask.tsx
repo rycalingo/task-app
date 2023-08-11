@@ -47,7 +47,7 @@ export const EditTask = ({
               {'Cancel'}
             </span>
             <button type='submit' className='update'>
-              {'Update'}
+              {'Save'}
             </button>
           </div>
         </form>

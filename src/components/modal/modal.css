@@ -19,9 +19,10 @@
 
 .modalContainer .close-button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -5px;
+  right: -5px;
   margin: 18px;
+  font-size: 1.5rem;
 }
 
 .modalContainer .bi-x-circle {
