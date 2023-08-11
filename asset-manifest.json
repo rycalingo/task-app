@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/taskbuddy/static/css/main.fcc0ad2e.css",
-    "main.js": "/taskbuddy/static/js/main.ffe5fd13.js",
-    "static/media/bootstrap-icons.woff?": "/taskbuddy/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
-    "static/media/bootstrap-icons.woff2?": "/taskbuddy/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
-    "static/media/logo.svg": "/taskbuddy/static/media/logo.10405fc30d75c1617d30c2b31a9da7e3.svg",
-    "index.html": "/taskbuddy/index.html",
-    "main.fcc0ad2e.css.map": "/taskbuddy/static/css/main.fcc0ad2e.css.map",
-    "main.ffe5fd13.js.map": "/taskbuddy/static/js/main.ffe5fd13.js.map"
+    "main.css": "/task-app/static/css/main.cd36be22.css",
+    "main.js": "/task-app/static/js/main.47a00dd7.js",
+    "static/media/bootstrap-icons.woff?": "/task-app/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/task-app/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "static/media/logo.svg": "/task-app/static/media/logo.10405fc30d75c1617d30c2b31a9da7e3.svg",
+    "index.html": "/task-app/index.html",
+    "main.cd36be22.css.map": "/task-app/static/css/main.cd36be22.css.map",
+    "main.47a00dd7.js.map": "/task-app/static/js/main.47a00dd7.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcc0ad2e.css",
-    "static/js/main.ffe5fd13.js"
+    "static/css/main.cd36be22.css",
+    "static/js/main.47a00dd7.js"
   ]
 }
