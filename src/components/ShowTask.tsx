@@ -1,4 +1,4 @@
-import { Task, ShowTaskProps } from '../scripts/Task';
+import { Task, ShowTaskProps } from '../models/Task';
 
 export const ShowTask = ({
   tasklist,

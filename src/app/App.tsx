@@ -3,11 +3,11 @@ import { Header } from '../components/Header';
 import { ShowTask } from '../components/ShowTask';
 import { AddTask } from '../components/AddTask';
 import { EditTask } from '../components/EditTask';
-import { Task } from '../scripts/Task';
+import { Task } from '../models/Task';
 
 import './App.css';
 
-import { themeList } from '../models/theme';
+import { themeList } from '../content/theme';
 
 function App() {
   const [tasklist, setTasklist] = useState<Task[] | []>([]);

@@ -1,6 +1,6 @@
 import { Modal } from './modal/Modal';
 
-import { EditTaskProps } from '../scripts/Task';
+import { EditTaskProps } from '../models/Task';
 
 export const EditTask = ({
   tasklist,
